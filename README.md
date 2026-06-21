@@ -1,17 +1,24 @@
-# apiintegration
+# Week 4: API Integration and Networking
 
-A new Flutter project.
+A Flutter app that fetches and displays user data from [JSONPlaceholder](https://jsonplaceholder.typicode.com).
 
-## Getting Started
+## Files
+- `main.dart` — app entry point
+- `users_screen.dart` — fetches API data and displays it
 
-This project is a starting point for a Flutter application.
+## Features
+- Fetches users from `GET https://jsonplaceholder.typicode.com/users`
+- Displays name and email in a ListView
+- Shows a loading spinner while fetching
+- Shows an error message with a Try Again button if the request fails
 
-A few resources to get you started if this is your first Flutter project:
+## How to Run
+```bash
+flutter pub get
+flutter run
+```
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Dependencies
+```yaml
+http: ^1.2.1
+```
